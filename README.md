@@ -1,5 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
+# Melanoma Detection using Convolutional Neural Networks
+> This project involves building a multiclass classification model using a custom convolutional neural network (CNN) in TensorFlow to detect melanoma and other skin diseases. Melanoma, a deadly type of skin cancer, accounts for 75% of skin cancer deaths, making early detection crucial. The goal is to develop a solution that can evaluate images and assist dermatologists in diagnosing melanoma, thereby reducing manual effort.
 
 
 ## Table of Contents
@@ -11,42 +11,42 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Background: This project focuses on utilizing deep learning techniques, specifically CNNs, to classify skin disease images. The ability to accurately detect melanoma has significant implications for early intervention and treatment.
+
+- Business Problem: Early detection of melanoma can save lives and reduce the healthcare burden. This model aims to assist dermatologists in making quicker and more accurate diagnoses based on image analysis.
+
+- Dataset: The dataset consists of 2357 images of malignant and benign skin diseases, sourced from the International Skin Imaging Collaboration (ISIC). The dataset includes various skin conditions, such as:
+
+Actinic keratosis
+Basal cell carcinoma
+Dermatofibroma
+Melanoma
+Nevus
+Pigmented benign keratosis
+Seborrheic keratosis
+Squamous cell carcinoma
+Vascular lesion
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+- Model Performance: The custom CNN model was trained to classify images into 9 categories, with observations made regarding overfitting and underfitting after training on the initial dataset.
+
+- Data Augmentation: Implementing data augmentation strategies improved model robustness and reduced overfitting, leading to better generalization on unseen data.
+
+- Class Imbalance Handling: The class distribution was examined, revealing certain classes with fewer samples. Techniques were applied using the Augmentor library to rectify class imbalances, resulting in improved model accuracy.
+
+- Final Model Training: The final model, trained on rectified data for approximately 30 epochs, demonstrated enhanced classification performance, with reduced evidence of previous overfitting or underfitting issues.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+- Python 3.8
+- TensorFlow 2.x
+- Keras
+- NumPy
+- Pandas
+- Matplotlib
+- Augmentor
+- scikit-learn
